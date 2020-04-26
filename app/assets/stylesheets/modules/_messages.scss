@@ -7,9 +7,19 @@
     .side_bar {
       width: 300px;
       height: 100vh;
+
       &__header {
         background-color: #253141;
         height: 100px;
+        display: flex;
+        align-items: center;
+
+        &--user_box {
+          background-color: #d8d8d8;
+          height: 20px;
+          width: 260px;
+          margin: 0 20px;
+        }
       }
       &__group-lists {
         background-color: #2f3e51;
@@ -19,6 +29,7 @@
     .main_chat {
       width: calc(100vw - 300px);
       height: 100vh;
+      
       &__header {
         background-color: #ffffff;
         height: 100px;
