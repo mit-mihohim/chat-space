@@ -136,29 +136,38 @@
       &__form {
         background-color: #d2d2d2;
         height: 90px;
-        display: flex;
-        align-items: center;
-        padding: 0 40px;
+        padding: 20px 40px;
         &--box {
-          width: 100%;
+          display: flex;
           .message_box {
+            width: calc(100% - 100px - 15px);
             display: flex;
             align-items: center;
+            justify-content: flex-end;
+            margin-right: 15px;
+            position: relative;
             .type_message {
-              width: calc(100vw - 100px - 15px);
               height: 50px;
+              width: 100%;
+              position: absolute;
+              padding-left: 10px;
             }
-            .pic_icon {
-              margin-right: 10px;
+            .pic__btn {
+              font-size: 25px;
+              position: absolute;
+              padding-right: 10px;
+              &--image-file {
+                display: none;
+              }
             }
-            .send__btn {
+          }
+          .send__btn {
               text-decoration: none;
               background-color: #38aef0;
               width: 100px;
               height: 50px;
               color:#ffffff;
             }
-          }
         }
       }
     }

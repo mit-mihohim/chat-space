@@ -32,7 +32,7 @@
     .chat-main__form--box
       %form{class: "message_box"}
         %input{type: "text", placeholder: "type a message", class: "type_message"}
-          .pic_icon
-            = link_to "#", class: "pic__btn" do
-              = icon('fas', 'image')
-          %input{type: "submit", value: "Send", class: "send__btn"}
+        %label{class: "pic__btn"}
+          = icon('far', 'image')
+          %input{type: "file", class: "pic__btn--image-file"}
+      %input{type: "submit", value: "Send", class: "send__btn"}
