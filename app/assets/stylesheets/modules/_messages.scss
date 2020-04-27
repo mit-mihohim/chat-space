@@ -4,7 +4,7 @@
   .wrapper {
     display: flex;
 
-    .side_bar {
+    .chat-side {
       width: 300px;
       height: 100vh;
 
@@ -14,22 +14,61 @@
         display: flex;
         align-items: center;
 
-        &--user_box {
-          background-color: #d8d8d8;
+        &--side_box {
           height: 20px;
           width: 260px;
           margin: 0 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: bold;
+          .p {
+            line-height: 20px;
+          }
+          .ul--menu {
+            width: 60px;
+            display: flex;
+            justify-content: flex-end;
+            .menu__btn {
+              color: #ffffff;
+            }
+          .li--new-group {
+            margin-right: 5px;
+            }
+          }
         }
       }
-      &__group-lists {
+      &__groups {
         background-color: #2f3e51;
         height: calc(100vh - 100px);
+        color: #ffffff;
+        
+
+        &--group_box {
+          height: calc(65px + 15px + 11px);
+          width: calc(100% - 40px);
+          margin-left: 20px;
+
+          &__group-name {
+            font-size: 15px;
+            padding-top: 20px;
+            margin-bottom: 5px;
+          }
+          &__latest-message {
+            font-size: 11px;
+            margin-bottom: 40px;
+          }
+          
+          
+        }
       }
     }
-    .main_chat {
+    .chat-main {
       width: calc(100vw - 300px);
       height: 100vh;
-      
+
       &__header {
         background-color: #ffffff;
         height: 100px;
@@ -43,7 +82,6 @@
         background-color: #d2d2d2;
         height: 90px;
       }
-
     }
   }
 }
