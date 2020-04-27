@@ -3,10 +3,10 @@
 
   .wrapper {
     display: flex;
+    height: 100vh;
 
     .chat-side {
       width: 300px;
-      height: 100vh;
 
       &__header {
         background-color: #253141;
@@ -67,7 +67,6 @@
     }
     .chat-main {
       width: calc(100vw - 300px);
-      height: 100vh;
 
       &__header {
         background-color: #ffffff;
@@ -77,6 +76,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 40px;
+
 
         &-leftbox {
           width: 100%;
@@ -138,29 +138,18 @@
         height: 90px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         padding: 0 40px;
         &--box {
-          display: flex;
           width: 100%;
-          align-items: center;
           .message_box {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            margin-right: 15px;
-            width: 100%;
             .type_message {
               width: calc(100vw - 100px - 15px);
               height: 50px;
             }
             .pic_icon {
               margin-right: 10px;
-            }
-            &--send_btn {
-              background-color: #38aef0;
-              height: 50px;
-              width: 100px;
             }
             .send__btn {
               text-decoration: none;
