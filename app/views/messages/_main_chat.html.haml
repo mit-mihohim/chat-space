@@ -1,0 +1,38 @@
+.chat-main
+  .chat-main__header
+    .chat-main__header-leftbox
+      .current_group
+        テックキャンプ
+      .member_lists
+        Member：miho
+      
+    .chat-main__header-edit__btn
+      = link_to '#', class: "edit__btn" do
+        Edit
+
+  .chat-main__messages
+    .chat-main__messages--message-box
+      .chat-main__messages--message-box__info
+        .user_name
+          miho
+        .sent_time
+          2020/04/27(Mon) 17:30
+      .chat-main__messages--message-box__message
+        やほー！
+    .chat-main__messages--message-box
+      .chat-main__messages--message-box__info
+        .user_name
+          miho
+        .sent_time
+          2020/04/27(Mon) 17:30
+      .chat-main__messages--message-box__message
+        やほー！
+
+  .chat-main__form
+    .chat-main__form--box
+      %form{class: "message_box"}
+        %input{type: "text", placeholder: "type a message", class: "type_message"}
+        %label{class: "pic__btn"}
+          = icon('far', 'image')
+          %input{type: "file", class: "pic__btn--image-file"}
+      %input{type: "submit", value: "Send", class: "send__btn"}
