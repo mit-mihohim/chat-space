@@ -39,22 +39,26 @@
       &__groups {
         background-color: #2f3e51;
         height: calc(100vh - 100px);
-        color: $color-white;
-        
 
         &--group_box {
           height: calc(65px + 15px + 11px);
           width: calc(100% - 40px);
           margin-left: 20px;
 
+          .group {
+            text-decoration: none;
+          }
+
           &__group-name {
             font-size: 15px;
             padding-top: 20px;
             margin-bottom: 5px;
+            color: $color-white;
           }
           &__latest-message {
             font-size: 11px;
             margin-bottom: 40px;
+            color: $color-white;
           }
           
           
