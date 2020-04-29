@@ -31,7 +31,7 @@
 - has_many :messages
 - has_many :users_groups
 
-## users_groupsテーブル
+## users_groupsテーブル(groups_users)
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
