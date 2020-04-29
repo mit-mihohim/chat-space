@@ -12,17 +12,9 @@
 
   .chat-side__groups
     .chat-side__groups--group_box
-      .chat-side__groups--group_box__group-name
-        TeaParty
-      .chat-side__groups--group_box__latest-message
-        yammy
-    .chat-side__groups--group_box
-      .chat-side__groups--group_box__group-name
-        Reiwakai
-      .chat-side__groups--group_box__latest-message
-        波乱の幕開けですね
-    .chat-side__groups--group_box
-      .chat-side__groups--group_box__group-name
-        テックキャンプ
-      .chat-side__groups--group_box__latest-message
-        視力低下否めない
+      - current_user.groups.each do |group|
+        = link_to "#", class: "group" do
+          .chat-side__groups--group_box__group-name
+            = group.name
+          .chat-side__groups--group_box__latest-message
+            メッセージはまだありません。
