@@ -11,16 +11,17 @@
         Edit
 
   .chat-main__messages
-    .chat-main__messages__message-box
-      .chat-main__messages__message-box__info
-        .chat-main__messages__message-box__info__user-name
-          miho
-        .chat-main__messages__message-box__info__sent-time
-          2020/04/27(Mon) 17:30
-      .chat-main__messages--message-box__message
-        やほー！
+    = render @messages
+    -# .chat-main__messages__message-box
+    -#   .chat-main__messages__message-box__info
+    -#     .chat-main__messages__message-box__info__user-name
+    -#       miho
+    -#     .chat-main__messages__message-box__info__sent-time
+    -#       2020/04/27(Mon) 17:30
+    -#   .chat-main__messages--message-box__message
+    -#     やほー！
 
-  .form
+  .chat-main__form
     = form_for [@group, @message] do |f|
       .chat-main__form-box
         = f.text_field :body, class: 'chat-main__form-box__text', placeholder: 'type a message'
