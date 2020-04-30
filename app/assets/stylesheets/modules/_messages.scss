@@ -108,17 +108,17 @@
       &__messages {
         background-color: #fafafa;
         height: calc(100vh - 190px);
-        &--message-box {
+        &__message-box {
           padding: 35px 40px 46px;
           &__info {
             display: flex;
             margin-bottom: 12px;
-            .user_name {
+            &__user-name {
               font-weight: bold;
               color: #333333;
               font-size: 16px;
             }
-            .sent_time {
+            &__sent-time {
               margin-left: 10px;
               font-size: 12px;
               color: #999999;
