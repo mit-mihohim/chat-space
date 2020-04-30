@@ -1,3 +1,8 @@
+# rails version
+Rails 5.0.7.2
+# ruby version
+ruby 2.5.1p57 (2018-03-29 revision 63029)
+
 # DB設計
 ## usersテーブル
 |Column|Type|Options|
