@@ -1,10 +1,13 @@
 .chat-main
   .chat-main__header
-    .chat-main__header-leftbox
-      .current_group
-        テックキャンプ
-      .member_lists
-        Member：miho
+    .chat-main__header__leftbox
+      .chat-main__header__leftbox__current_group
+        = @group.name
+      .chat-main__header__leftbox__member-lists
+        Member：
+        .chat-main__header__leftbox__member-lists__member
+          - @group.users.each do |user|
+            = user.name
       
     .chat-main__header-edit__btn
       = link_to '#', class: "edit__btn" do
@@ -12,14 +15,6 @@
 
   .chat-main__messages
     = render @messages
-    -# .chat-main__messages__message-box
-    -#   .chat-main__messages__message-box__info
-    -#     .chat-main__messages__message-box__info__user-name
-    -#       miho
-    -#     .chat-main__messages__message-box__info__sent-time
-    -#       2020/04/27(Mon) 17:30
-    -#   .chat-main__messages--message-box__message
-    -#     やほー！
 
   .chat-main__form
     = form_for [@group, @message] do |f|
