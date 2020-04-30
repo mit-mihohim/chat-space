@@ -79,17 +79,17 @@
         position: absolute;
         top: 0;
 
-        &-leftbox {
-          width: 100%;
-          .current_group {
-            margin-top: 35px;
+        &__leftbox {
+          margin-top: 35px;
+          &__current_group {
             font-size: 20px;
             color: #333333;
+            margin-bottom: 15px;
           }
-          .member_lists {
-            margin-top: 15px;
+          &__member-lists {
             font-size: 12px;
             color: #999999;
+            display: flex;
           }
         }
         &-edit__btn {
