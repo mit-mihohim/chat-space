@@ -39,6 +39,7 @@
       &__groups {
         background-color: #2f3e51;
         height: calc(100vh - 100px);
+        overflow: scroll;
 
         &--group_box {
           height: calc(65px + 15px + 11px);
@@ -112,6 +113,8 @@
         background-color: #fafafa;
         height: 100%;
         padding-top: 100px;
+        padding-bottom: 90px;
+        overflow: scroll;
         &__message-box {
           padding: 35px 40px 46px;
           &__info {
