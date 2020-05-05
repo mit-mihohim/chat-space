@@ -7,4 +7,4 @@
   .chat-main__messages__message-box__message
     - if message.body.present?
       = message.body
-    = image_tag message.image.url, class: '' if message.image.present?
+    = image_tag message.image_url, class: '' if message.image.present?
